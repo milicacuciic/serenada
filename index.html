@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Serenada</title>
+<meta name="description" content="Serenada — bend za svadbe, rođendane i proslave. Koncept sajta: Milica Cucić.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+  :root{ color-scheme: dark; }
+  *{ box-sizing: border-box; }
+  body{ margin:0; background:#171310; color:#F2ECE0; font-family:'Inter',sans-serif; min-height:100vh; overflow-x:hidden; }
+  img{ max-width:100%; }
+  a{ color:#D4AF6A; text-decoration:none; }
+  a:hover{ color:#E8CB94; }
+  input, select, textarea{ color-scheme: dark; font-family:'Inter',sans-serif; }
+  input::placeholder, textarea::placeholder{ color:#8A8072; }
+  [hidden]{ display:none !important; }
+  @keyframes bounce { 0%,100%{ transform:translateY(0); opacity:.5; } 50%{ transform:translateY(8px); opacity:1; } }
+  @keyframes marquee { from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+  .marquee-track{ display:inline-flex; animation:marquee 35s linear infinite; }
+  @media (prefers-reduced-motion: reduce){ .marquee-track{ animation:none; } }
+  .warm{ filter:saturate(0.85) contrast(1.08) brightness(0.96) sepia(0.12); }
+  @media (max-width:640px){ .gallery-grid{ grid-template-columns:repeat(2,1fr) !important; gap:12px !important; } .gallery-grid > *:nth-child(n+6){ display:none; } }
+  .focusable:focus-visible{ outline:2px solid #D4AF6A; outline-offset:3px; }
+</style>
+</head>
+<body>
+
+<header style="position:fixed; top:0; left:0; right:0; z-index:50; background:rgba(23,19,16,0.85); backdrop-filter:blur(10px); border-bottom:1px solid rgba(212,175,106,0.15); padding:14px clamp(20px,6vw,64px);">
+  <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:10px; max-width:1200px; margin:0 auto;">
+    <div style="font-family:'Playfair Display',serif; font-weight:500; font-size:16px; color:#F7F1E4; letter-spacing:0.02em;">Serenada</div>
+    <a class="focusable" href="tel:0641234567" style="display:inline-flex; align-items:center; gap:8px; padding:8px 16px; border:1px solid rgba(212,175,106,0.4); border-radius:999px; font-size:13px; color:#F2ECE0; white-space:nowrap;">064 123 4567</a>
+  </div>
+</header>
+
+<section style="min-height:720px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:120px 24px 80px; position:relative; overflow:hidden;">
+  <video class="warm" autoplay muted loop playsinline preload="auto" poster="img/hero.jpg" aria-hidden="true" style="position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover;"><source src="img/hero.mp4" type="video/mp4"></video>
+  <div style="position:absolute; inset:0; z-index:0; background:rgba(212,175,106,0.08); mix-blend-mode:multiply;"></div>
+  <div style="position:absolute; inset:0; z-index:0; background:rgba(23,19,16,0.6);"></div>
+  <div style="position:absolute; inset:0; z-index:1; pointer-events:none; background:
+    radial-gradient(450px 250px at 50% 105%, rgba(212,175,106,0.32), transparent 60%),
+    radial-gradient(190px 190px at 15% 20%, rgba(212,175,106,0.14), transparent 70%),
+    radial-gradient(160px 160px at 85% 15%, rgba(212,175,106,0.10), transparent 70%);"></div>
+  <div style="position:absolute; inset:0; z-index:1; pointer-events:none;">
+    <span style="position:absolute; left:12%; top:28%; width:3px; height:3px; border-radius:50%; background:#D4AF6A; opacity:.45;"></span>
+    <span style="position:absolute; left:78%; top:22%; width:4px; height:4px; border-radius:50%; background:#D4AF6A; opacity:.35;"></span>
+    <span style="position:absolute; left:88%; top:55%; width:2px; height:2px; border-radius:50%; background:#D4AF6A; opacity:.5;"></span>
+    <span style="position:absolute; left:8%; top:62%; width:5px; height:5px; border-radius:50%; background:#D4AF6A; opacity:.3;"></span>
+    <span style="position:absolute; left:65%; top:75%; width:3px; height:3px; border-radius:50%; background:#D4AF6A; opacity:.4;"></span>
+    <span style="position:absolute; left:35%; top:18%; width:2px; height:2px; border-radius:50%; background:#D4AF6A; opacity:.45;"></span>
+  </div>
+  <div style="position:absolute; bottom:32px; left:50%; transform:translateX(-50%); animation:bounce 2s ease-in-out infinite; z-index:2;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9L12 15L18 9" stroke="#A89A87" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </div>
+  <div style="position:relative; z-index:2; display:flex; flex-direction:column; align-items:center;">
+    <h1 style="font-family:'Playfair Display',serif; font-weight:500; font-size:clamp(48px,10vw,100px); color:#F7F1E4; margin:20px 0 0; line-height:1.05;">Serenada</h1>
+    <p style="font-family:'Playfair Display',serif; font-size:clamp(16px,1.8vw,19px); color:#E3CE9E; max-width:560px; margin:24px 0 0; line-height:1.5; font-style:italic;">Bend koji pretvara proslavu u priču koju prepričavate godinama.</p>
+    <div style="margin-top:44px; display:flex; gap:16px; flex-wrap:wrap; justify-content:center;">
+      <a class="focusable" href="#kontakt" style="padding:16px 38px; background:#D4AF6A; color:#171310; border-radius:4px; font-size:15px;">Proveri dostupnost</a>
+      <a class="focusable" href="#galerija" style="padding:16px 38px; background:transparent; border:1px solid rgba(247,241,228,0.4); color:#F7F1E4; border-radius:4px; font-size:15px;">Pogledaj nastupe</a>
+    </div>
+  </div>
+</section>
+
+<div style="border-top:1px solid rgba(212,175,106,0.15); border-bottom:1px solid rgba(212,175,106,0.15); padding:15px 0; text-align:center;">
+  <span style="font-size:13px; color:#D9C9A8; letter-spacing:1.5px;">Venčanja · Rođendani · Punoletstva · Krštenja · Korporativne žurke · Godišnjice</span>
+</div>
+
+<section style="border-top:1px solid rgba(212,175,106,0.15); padding:80px clamp(20px,6vw,64px); background:radial-gradient(circle at 50% 0%, rgba(212,175,106,0.07), transparent 60%);">
+  <div style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:48px; align-items:center;">
+    <div style="position:relative; width:100%; height:420px;">
+      <img class="warm" src="img/about.jpg" alt="Gosti nazdravljaju na proslavi" style="width:100%; height:100%; border:1px solid rgba(212,175,106,0.15); border-radius:8px; object-fit:cover; object-position:50% 40%; display:block;">
+      <div style="position:absolute; inset:0; border-radius:8px; background:linear-gradient(180deg, rgba(23,19,16,0.15), rgba(23,19,16,0.35));"></div>
+      <div style="position:absolute; inset:0; border-radius:8px; background:rgba(212,175,106,0.08); mix-blend-mode:multiply;"></div>
+    </div>
+    <div style="display:flex; flex-direction:column; justify-content:center;">
+      <h2 style="font-family:'Playfair Display',serif; font-weight:400; font-size:clamp(28px,3.2vw,32px); color:#E8DDC9; margin:0 0 20px; line-height:1.25;">Mi smo Serenada, troje ljudi, jedna energija.</h2>
+      <p style="font-size:16px; color:#C9BAA0; line-height:1.75; margin:0; max-width:480px;">Pevač, pevačica i klavijaturista koji već godinama pretvaraju proslave u nezaboravne noći.<br>Dolazimo sa sopstvenim ozvučenjem i rasvetom, spremni da prilagodimo repertoar svakoj vrsti slavlja.</p>
+    </div>
+  </div>
+</section>
+
+<section id="galerija" style="padding:80px clamp(20px,6vw,64px); max-width:1200px; margin:0 auto;">
+  <h2 style="font-family:'Playfair Display',serif; font-weight:400; font-size:clamp(28px,4vw,38px); color:#E8DDC9; text-align:center; margin:0 0 12px;">Trenuci koje svi pamtimo</h2>
+  <p style="font-size:16px; color:#C9BAA0; text-align:center; max-width:400px; margin:0 auto 40px;">Svaka slika je jedna noć, jedna proslava, jedna priča.</p>
+  <div class="gallery-grid" style="display:grid; grid-template-columns:repeat(3,1fr); grid-auto-flow:dense; gap:20px;">
+    <div class="gtile" style="grid-column:span 2; grid-row:span 2;"><img class="warm" loading="lazy" src="img/g-lights.jpg" alt="Topla svetla na proslavi"></div>
+    <div class="gtile"><img class="warm" loading="lazy" src="img/g-confetti.jpg" alt="Cvetna dekoracija za venčanje"></div>
+    <div class="gtile"><img class="warm" loading="lazy" src="img/g-toast.jpg" alt="Zdravica gostiju"></div>
+    <div class="gtile"><img class="warm" loading="lazy" src="img/g-mic.jpg" alt="Mikrofon"></div>
+    <div class="gtile"><img class="warm" loading="lazy" src="img/g-balloons.jpg" alt="Baloni na rođendanu"></div>
+    <div class="gtile"><img class="warm" loading="lazy" src="img/g-wedding.jpg" alt="Venčanje"></div>
+    <div class="gtile"><img class="warm" loading="lazy" src="img/g-trumpet.jpg" alt="Truba"></div>
+    <div class="gtile"><img class="warm" loading="lazy" src="img/g-piano.jpg" alt="Klavijature"></div>
+    <div class="gtile"><img class="warm" loading="lazy" src="img/g-dance.jpg" alt="Rođendanska poslastica"></div>
+  </div>
+  <div style="text-align:center; margin-top:32px;">
+    <a class="focusable" href="https://instagram.com/serenada_bend" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; border:1px solid #6b6355; border-radius:100px; padding:10px 20px; color:#C9BAA0; font-size:14px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#C9BAA0" stroke-width="1.5"></rect><circle cx="12" cy="12" r="4" stroke="#C9BAA0" stroke-width="1.5"></circle><circle cx="17.5" cy="6.5" r="1" fill="#C9BAA0"></circle></svg>
+      Pogledaj još na Instagramu
+    </a>
+  </div>
+</section>
+
+<section style="padding:80px clamp(20px,6vw,64px); max-width:1200px; margin:0 auto;">
+  <h2 style="font-family:'Playfair Display',serif; font-weight:400; font-size:clamp(28px,4vw,38px); color:#E8DDC9; text-align:left; margin:0 0 48px;">Utisci naših gostiju</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px;" id="testimonials"></div>
+</section>
+
+<div style="border-top:1px solid rgba(212,175,106,0.15); border-bottom:1px solid rgba(212,175,106,0.15); padding:15px 0; text-align:center;">
+  <span style="font-size:13px; color:#D9C9A8; letter-spacing:1.5px;">5 godina iskustva · 133 uspešne svirke · 1000+ oduševljenih gostiju</span>
+</div>
+
+<section style="padding:80px clamp(20px,6vw,64px); max-width:640px; margin:0 auto;">
+  <h2 style="font-family:'Playfair Display',serif; font-weight:400; font-size:clamp(28px,4vw,38px); color:#E8DDC9; text-align:center; margin:0 0 40px;">Često postavljana pitanja</h2>
+  <div id="faqs"></div>
+</section>
+
+<section style="padding:80px clamp(20px,6vw,64px) 0; max-width:1200px; margin:0 auto;">
+  <h2 style="font-family:'Playfair Display',serif; font-weight:400; font-size:clamp(28px,4vw,38px); color:#E8DDC9; text-align:center; margin:0 0 12px;">Provera dostupnosti</h2>
+  <p style="font-size:16px; color:#C9BAA0; text-align:center; max-width:440px; margin:0 auto 40px;">Pogledajte koji su termini slobodni pre nego što nam pošaljete upit.</p>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:32px; align-items:stretch;">
+    <div style="display:flex; flex-direction:column;">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:24px;">
+        <button class="focusable" id="prevMonth" aria-label="Prethodni mesec" style="padding:10px 20px; background:transparent; border:1px solid rgba(212,175,106,0.4); border-radius:999px; color:#F2ECE0; font-size:13px; cursor:pointer;">‹</button>
+        <div id="monthLabel" style="font-family:'Playfair Display',serif; font-size:clamp(18px,2.2vw,24px); color:#E8DDC9; letter-spacing:0.5px;"></div>
+        <button class="focusable" id="nextMonth" aria-label="Sledeći mesec" style="padding:10px 20px; background:transparent; border:1px solid rgba(212,175,106,0.4); border-radius:999px; color:#F2ECE0; font-size:13px; cursor:pointer;">›</button>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(7,1fr); gap:8px; margin-bottom:8px;">
+        <div style="text-align:center; font-size:11px; letter-spacing:1px; color:#8A8072;">PON</div>
+        <div style="text-align:center; font-size:11px; letter-spacing:1px; color:#8A8072;">UTO</div>
+        <div style="text-align:center; font-size:11px; letter-spacing:1px; color:#8A8072;">SRE</div>
+        <div style="text-align:center; font-size:11px; letter-spacing:1px; color:#8A8072;">ČET</div>
+        <div style="text-align:center; font-size:11px; letter-spacing:1px; color:#8A8072;">PET</div>
+        <div style="text-align:center; font-size:11px; letter-spacing:1px; color:#8A8072;">SUB</div>
+        <div style="text-align:center; font-size:11px; letter-spacing:1px; color:#8A8072;">NED</div>
+      </div>
+      <div id="calGrid" style="display:grid; grid-template-columns:repeat(7,1fr); gap:8px;"></div>
+      <div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:20px;">
+        <div style="display:flex; align-items:center; gap:8px; font-size:12px; color:#C9BAA0;"><span style="width:8px; height:8px; border-radius:50%; background:#9CAF6A;"></span>Slobodno</div>
+        <div style="display:flex; align-items:center; gap:8px; font-size:12px; color:#C9BAA0;"><span style="width:8px; height:8px; border-radius:50%; background:#A65B4A;"></span>Zauzeto</div>
+        <div style="display:flex; align-items:center; gap:8px; font-size:12px; color:#C9BAA0;"><span style="width:8px; height:8px; border-radius:50%; background:#D9A441;"></span>Potvrda u toku</div>
+      </div>
+    </div>
+    <div style="display:flex; align-items:center; justify-content:center;">
+      <div style="background:rgba(242,236,224,0.06); border:1px solid rgba(212,175,106,0.25); border-radius:8px; padding:28px 24px; width:100%;" id="dayDetail">
+        <p style="font-size:15px; color:#8A8072; margin:0; text-align:center;">Izaberite datum da vidite detalje.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" style="padding:100px clamp(20px,6vw,64px) 110px; max-width:1200px; margin:0 auto;">
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:56px; align-items:stretch;">
+    <div style="display:flex; flex-direction:column; justify-content:center;">
+      <h2 style="font-family:'Playfair Display',serif; font-weight:400; font-size:clamp(32px,4.5vw,44px); color:#E8DDC9; margin:0 0 20px; line-height:1.15;">Zakažite vaš termin</h2>
+      <p style="color:#A89A87; font-size:16px; line-height:1.6; margin:0 0 36px; max-width:420px;">Pošaljite upit sa detaljima proslave i javićemo vam se u najkraćem roku sa ponudom i potvrdom termina.</p>
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <a class="focusable" href="tel:0641234567" style="display:flex; align-items:center; gap:16px; color:#F2ECE0; font-size:17px; font-family:'Playfair Display',serif;">
+          <span style="width:44px; height:44px; border-radius:999px; border:1px solid rgba(212,175,106,0.4); display:flex; align-items:center; justify-content:center; color:#D4AF6A; font-size:16px; flex-shrink:0;">☏</span>
+          064 123 4567
+        </a>
+        <a class="focusable" href="https://instagram.com/serenada_bend" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:16px; color:#F2ECE0; font-size:17px; font-family:'Playfair Display',serif;">
+          <span style="width:44px; height:44px; border-radius:999px; border:1px solid rgba(212,175,106,0.4); display:flex; align-items:center; justify-content:center; color:#D4AF6A; font-size:16px; flex-shrink:0;">@</span>
+          serenada_bend
+        </a>
+      </div>
+    </div>
+    <div>
+      <div id="formSuccess" hidden style="text-align:center; padding:40px; border:1px solid #D4AF6A; border-radius:6px; color:#D4AF6A; font-size:16px;">Hvala! Javićemo se uskoro.</div>
+      <form id="bookForm" novalidate style="display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px;">
+        <div>
+          <input class="fi" id="f-name" type="text" placeholder="Ime i prezime" autocomplete="name" style="width:100%; padding:16px 18px; background:#1D1712; border:1px solid rgba(212,175,106,0.25); border-radius:6px; color:#F2ECE0; font-size:15px;">
+          <div class="err" hidden style="color:#A65B4A; font-size:13px; margin-top:6px;">Ovo polje je obavezno</div>
+        </div>
+        <div>
+          <input class="fi" id="f-date" type="text" inputmode="numeric" placeholder="dd.mm.gggg." style="width:100%; padding:16px 18px; background:#1D1712; border:1px solid rgba(212,175,106,0.25); border-radius:6px; color:#F2ECE0; font-size:15px;">
+          <div class="err" hidden style="color:#A65B4A; font-size:13px; margin-top:6px;">Ovo polje je obavezno</div>
+        </div>
+        <div style="grid-column:1 / -1;">
+          <select class="fi" id="f-type" style="width:100%; padding:16px 18px; background:#1D1712; border:1px solid rgba(212,175,106,0.25); border-radius:6px; color:#C9BAA0; font-size:15px;">
+            <option value="">Vrsta proslave</option>
+            <option value="vencanje">Venčanje</option>
+            <option value="rodjendan">Rođendan</option>
+            <option value="punoletstvo">Punoletstvo</option>
+            <option value="drugo">Druga proslava</option>
+          </select>
+          <div class="err" hidden style="color:#A65B4A; font-size:13px; margin-top:6px;">Ovo polje je obavezno</div>
+        </div>
+        <div style="grid-column:1 / -1;">
+          <textarea class="fi" id="f-msg" placeholder="Poruka, lokacija, broj gostiju, dodatne želje..." rows="4" style="width:100%; padding:16px 18px; background:#1D1712; border:1px solid rgba(212,175,106,0.25); border-radius:6px; color:#F2ECE0; font-size:15px; resize:vertical;"></textarea>
+          <div class="err" hidden style="color:#A65B4A; font-size:13px; margin-top:6px;">Ovo polje je obavezno</div>
+        </div>
+        <button class="focusable" type="submit" style="grid-column:1 / -1; margin-top:4px; padding:17px; background:#D4AF6A; color:#171310; border:none; border-radius:6px; font-size:16px; cursor:pointer; box-shadow:0 0 32px rgba(212,175,106,0.25);">Pošaljite upit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer style="border-top:1px solid rgba(212,175,106,0.15);">
+  <div style="padding:36px clamp(20px,6vw,64px) 48px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; align-items:center; max-width:1200px; margin:0 auto;">
+    <div style="font-family:'Playfair Display',serif; color:#F2ECDF; font-size:16px;">Serenada</div>
+    <div style="display:flex; gap:20px; flex-wrap:wrap; color:#A89A87; font-size:14px;">
+      <a href="tel:0641234567" style="color:#A89A87;">064 123 4567</a>
+      <a href="https://instagram.com/serenada_bend" target="_blank" rel="noopener" style="color:#A89A87;">@serenada_bend</a>
+    </div>
+  </div>
+  <div style="padding:0 clamp(20px,6vw,64px) 28px; max-width:1200px; margin:0 auto;">
+    <p style="font-size:12px; color:#6b6355; margin:0;">Serenada je izmišljen brend. Koncept i dizajn sajta: Milica Cucić.</p>
+  </div>
+</footer>
+
+<style>
+  .gtile{ aspect-ratio:1/1; border-radius:6px; border:1px solid rgba(212,175,106,0.15); position:relative; overflow:hidden; }
+  .gtile img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .gtile::after{ content:""; position:absolute; inset:0; border-radius:6px; background:linear-gradient(180deg, rgba(23,19,16,0.15), rgba(23,19,16,0.35)); pointer-events:none; }
+  .fi:focus-visible{ outline:none; border-color:#D4AF6A; }
+</style>
+
+<script>
+(function () {
+  // ---------- testimonials ----------
+  var testimonials = [
+    { quote: 'Bilo je predivno. Svi gosti su bili prezadovoljni, čak ste iznenadili i osoblje sale.', author: 'Jovana i Marko', event: 'venčanje' },
+    { quote: 'Ulepšali ste mi rođendan. Svi gosti su vas mnogo hvalili i tražili vaš kontakt za svoja slavlja.', author: 'Ivana', event: 'rođendan' },
+    { quote: 'Atmosfera je bila prelepa, svi su igrali i pitali odakle je bend. Dosta drugara će vas zvati sigurno.', author: 'Nikola', event: 'punoletstvo' }
+  ];
+  var star = '<svg width="14" height="14" viewBox="0 0 24 24" fill="#D4AF6A" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"></path></svg>';
+  document.getElementById('testimonials').innerHTML = testimonials.map(function (t) {
+    return '<div style="background:rgba(242,236,224,0.06); border:1px solid rgba(212,175,106,0.25); border-radius:8px; padding:28px 24px; box-shadow:0 8px 30px rgba(0,0,0,0.3);">' +
+      '<div style="display:flex; gap:3px; margin-bottom:14px;">' + star.repeat(5) + '</div>' +
+      '<div style="font-family:\'Playfair Display\',serif; font-size:40px; color:#D4AF6A; opacity:.7; line-height:1; margin-bottom:-8px;">“</div>' +
+      '<p style="font-style:italic; font-size:16px; color:#F2ECE0; margin:12px 0 16px; line-height:1.5;">' + t.quote + '</p>' +
+      '<div style="border-top:1px solid rgba(212,175,106,0.2); width:40px; margin-bottom:12px;"></div>' +
+      '<div style="font-size:13px; color:#C9A15E;">' + t.author + ', ' + t.event + '</div>' +
+    '</div>';
+  }).join('');
+
+  // ---------- FAQ ----------
+  var faqs = [
+    { q: 'Da li dolazite sa svojom opremom?', a: 'Da, dolazimo sa kompletnim ozvučenjem i rasvetom, prilagođenim veličini prostora.' },
+    { q: 'Možemo li da biramo pesme za repertoar?', a: 'Naravno, rado sviramo vaše omiljene pesme i poseban zahtev za prvi ples ili iznenađenje.' },
+    { q: 'Koliko unapred treba da rezervišemo termin?', a: 'Preporučujemo rezervaciju bar 2-3 meseca unapred, posebno za sezonu venčanja.' },
+    { q: 'Da li putujete van grada?', a: 'Da, izlazimo van grada, javite nam lokaciju u upitu i javićemo se sa ponudom.' },
+    { q: 'Kolika je cena nastupa?', a: 'Cena zavisi od tipa proslave, broja gostiju, trajanja i lokacije, svaka ponuda je prilagođena vašem događaju. Pošaljite upit sa detaljima i javljamo se sa konkretnom ponudom u toku dana.' },
+    { q: 'Kako izgleda proces rezervacije?', a: 'Pošaljete upit sa detaljima, javljamo se u toku dana sa ponudom i predlogom termina.' }
+  ];
+  var openFaq = 0;
+  var faqWrap = document.getElementById('faqs');
+  function renderFaqs() {
+    faqWrap.innerHTML = faqs.map(function (f, i) {
+      var open = openFaq === i;
+      var num = ('0' + (i + 1)).slice(-2);
+      return '<div style="border-bottom:1px solid rgba(212,175,106,0.08);">' +
+        '<button class="faq-toggle focusable" data-i="' + i + '" aria-expanded="' + open + '" style="width:100%; text-align:left; background:none; border:0; cursor:pointer; display:flex; align-items:center; justify-content:space-between; gap:16px; padding:24px 0;">' +
+          '<span style="display:flex; align-items:baseline; gap:16px;">' +
+            '<span style="font-size:13px; color:#8C6F3A; flex-shrink:0;">' + num + '</span>' +
+            '<span style="font-size:17px; color:#E8DDC9;">' + f.q + '</span>' +
+          '</span>' +
+          '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="transition:transform .2s ease; transform:rotate(' + (open ? 180 : 0) + 'deg); flex-shrink:0;"><path d="M6 9l6 6 6-6" stroke="#D4AF6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>' +
+        '</button>' +
+        (open ? '<p style="font-size:14px; color:#C9BAA0; padding:0 0 24px 0; max-width:560px; margin:0; line-height:1.6;">' + f.a + '</p>' : '') +
+      '</div>';
+    }).join('');
+    Array.prototype.forEach.call(faqWrap.querySelectorAll('.faq-toggle'), function (b) {
+      b.addEventListener('click', function () {
+        var i = parseInt(b.dataset.i, 10);
+        openFaq = (openFaq === i) ? null : i;
+        renderFaqs();
+      });
+    });
+  }
+  renderFaqs();
+
+  // ---------- calendar ----------
+  var MONTHS = ['januar','februar','mart','april','maj','jun','jul','avgust','septembar','oktobar','novembar','decembar'];
+  var MONTHS_GEN = ['januara','februara','marta','aprila','maja','juna','jula','avgusta','septembra','oktobra','novembra','decembra'];
+  function ymd(y, m, d) { return y + '-' + ('0'+(m+1)).slice(-2) + '-' + ('0'+d).slice(-2); }
+  // open on next month so the demo always shows upcoming, live-looking availability
+  var _now = new Date();
+  var startM = _now.getMonth() + 1, startY = _now.getFullYear();
+  if (startM > 11) { startM = 0; startY += 1; }
+  var m2 = startM + 1 > 11 ? 0 : startM + 1, y2 = startM + 1 > 11 ? startY + 1 : startY;
+  var BOOKED = [ymd(startY, startM, 14), ymd(startY, startM, 21), ymd(y2, m2, 6)];
+  var PENDING = [ymd(startY, startM, 28)];
+  var calYear = startY, calMonth = startM, selected = null;
+  var grid = document.getElementById('calGrid');
+  var label = document.getElementById('monthLabel');
+  var detail = document.getElementById('dayDetail');
+
+  function statusOf(dateStr) {
+    if (BOOKED.indexOf(dateStr) >= 0) return 'booked';
+    if (PENDING.indexOf(dateStr) >= 0) return 'pending';
+    return 'free';
+  }
+  function renderCal() {
+    label.textContent = MONTHS[calMonth].toUpperCase() + ' ' + calYear;
+    var firstDow = new Date(calYear, calMonth, 1).getDay();
+    var offset = (firstDow + 6) % 7;
+    var days = new Date(calYear, calMonth + 1, 0).getDate();
+    var today = new Date(); today.setHours(0,0,0,0);
+    var html = '';
+    for (var i = 0; i < offset; i++) html += '<div></div>';
+    for (var d = 1; d <= days; d++) {
+      var ds = calYear + '-' + ('0'+(calMonth+1)).slice(-2) + '-' + ('0'+d).slice(-2);
+      var dObj = new Date(calYear, calMonth, d);
+      var past = dObj < today;
+      var st = statusOf(ds);
+      var sel = selected === ds;
+      var dot = st === 'booked' ? '#A65B4A' : st === 'pending' ? '#D9A441' : '#9CAF6A';
+      html += '<button type="button" class="calcell focusable" ' + (past ? 'disabled' : 'data-ds="' + ds + '"') +
+        ' style="aspect-ratio:1/1; background:#1D1712; border:1px solid ' + (sel ? '#D4AF6A' : 'rgba(212,175,106,0.15)') +
+        '; border-radius:6px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; cursor:' + (past ? 'default' : 'pointer') + '; opacity:' + (past ? 0.35 : 1) + ';">' +
+        '<span style="font-size:14px; color:#F2ECE0; ' + (past ? 'text-decoration:line-through;' : '') + '">' + d + '</span>' +
+        '<span style="width:6px; height:6px; border-radius:50%; background:' + dot + '; display:' + (past ? 'none' : 'block') + ';"></span>' +
+      '</button>';
+    }
+    grid.innerHTML = html;
+    Array.prototype.forEach.call(grid.querySelectorAll('.calcell[data-ds]'), function (c) {
+      c.addEventListener('click', function () { selected = c.dataset.ds; renderCal(); renderDetail(); });
+    });
+  }
+  function renderDetail() {
+    if (!selected) { detail.innerHTML = '<p style="font-size:15px; color:#8A8072; margin:0; text-align:center;">Izaberite datum da vidite detalje.</p>'; return; }
+    var parts = selected.split('-');
+    var dayNum = parseInt(parts[2], 10);
+    var mIdx = parseInt(parts[1], 10) - 1;
+    var lbl = dayNum + '. ' + MONTHS_GEN[mIdx] + ' ' + parts[0] + '.';
+    var st = statusOf(selected);
+    var txt = st === 'booked' ? 'Ovaj datum je već zakazan.' : st === 'pending' ? 'Potvrda rezervacije je u toku za ovaj datum.' : 'Ovaj datum je slobodan za vaše slavlje.';
+    var action = st === 'booked'
+      ? '<div style="padding:14px; border:1px solid rgba(166,91,74,0.6); color:#A65B4A; border-radius:6px; font-size:14px; text-align:center; letter-spacing:0.5px;">DATUM JE REZERVISAN</div>'
+      : st === 'free'
+      ? '<a class="focusable" href="#kontakt" style="display:block; padding:14px; background:#D4AF6A; color:#171310; border-radius:6px; font-size:14px; text-align:center; letter-spacing:0.5px;">Proveri dostupnost</a>'
+      : '';
+    detail.innerHTML = '<div style="font-family:\'Playfair Display\',serif; font-size:22px; color:#D4AF6A; margin:0 0 12px;">' + lbl + '</div>' +
+      '<p style="font-size:15px; color:#C9BAA0; margin:0 0 20px; line-height:1.5;">' + txt + '</p>' + action;
+  }
+  document.getElementById('prevMonth').addEventListener('click', function () {
+    calMonth--; if (calMonth < 0) { calMonth = 11; calYear--; } renderCal();
+  });
+  document.getElementById('nextMonth').addEventListener('click', function () {
+    calMonth++; if (calMonth > 11) { calMonth = 0; calYear++; } renderCal();
+  });
+  renderCal(); renderDetail();
+
+  // ---------- form ----------
+  var form = document.getElementById('bookForm');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var fields = ['f-name', 'f-date', 'f-type', 'f-msg'];
+    var firstBad = null;
+    fields.forEach(function (id) {
+      var el = document.getElementById(id);
+      var err = el.parentNode.querySelector('.err');
+      var empty = !el.value.trim();
+      err.hidden = !empty;
+      el.style.borderColor = empty ? '#A65B4A' : 'rgba(212,175,106,0.25)';
+      if (empty && !firstBad) firstBad = el;
+    });
+    if (firstBad) { firstBad.focus(); return; }
+    form.hidden = true;
+    document.getElementById('formSuccess').hidden = false;
+  });
+})();
+
+</script>
+
+</body>
+</html>
